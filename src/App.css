@@ -1,0 +1,111 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7f6;
+}
+
+.chat-container {
+  width: 600px;  /* Width of the chat container */
+  height: 700px;  /* Height of the chat container */
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-header {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px;  /* Reduced padding */
+  font-size: 24px;  /* Font size for the header */
+  font-weight: bold;
+  text-align: center;  /* Centered text */
+  height: 60px;  /* Fixed height for header */
+  line-height: 60px;  /* Center text vertically */
+}
+
+.chat-box {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message {
+  margin: 10px 0;
+  padding: 12px 18px;
+  border-radius: 20px;
+  max-width: 80%;  /* Adjusted max width */
+  word-wrap: break-word;
+  line-height: 1.4;
+  font-size: 15px;  /* Font size for chat messages */
+}
+
+.user-message {
+  background-color: #6200ea;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+.bot-message {
+  background-color: #e8eaf6;
+  color: #333;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}
+
+.input-box {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #f4f4f4;
+}
+
+.input-box input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.input-box input:focus {
+  outline: none;
+  border-color: #6200ea;
+}
+
+.input-box button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #6200ea;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.input-box button:hover {
+  background-color: #3700b3;
+}
